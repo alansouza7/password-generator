@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <h2 class="title">Generate a</h2>
+        <h2 class="sub-title">random password</h2>
+        <p>Never use an insecure password again</p>
+        <button id="generate-el">Generate passwords</button>
+        <input 
+        name="password-length"
+        class="password-length" 
+        id="password-length"
+         type="number" 
+         placeholder="Set the password length" 
+         min="1"
+         max="15">
+        </input>
+
+        <div class="border"></div>
+        <div class="random-passwords">
+            <div id="password-1-el"></div>
+            <div class="copy-btn" id="copy-btn"><i class="fa-regular fa-copy"></i></div>
+            <div id="modal" class="hidden">
+                <p>Copied Text:</p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
